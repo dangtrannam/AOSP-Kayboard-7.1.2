@@ -219,11 +219,10 @@ public class ProximityInfo {
         }
 
         // TODO: Stop passing proximityCharsArray
-        return 100;
-//                setProximityInfoNative(mKeyboardMinWidth, mKeyboardHeight, mGridWidth, mGridHeight,
-//                mMostCommonKeyWidth, mMostCommonKeyHeight, proximityCharsArray, keyCount,
-//                keyXCoordinates, keyYCoordinates, keyWidths, keyHeights, keyCharCodes,
-//                sweetSpotCenterXs, sweetSpotCenterYs, sweetSpotRadii);
+        return  setProximityInfoNative(mKeyboardMinWidth, mKeyboardHeight, mGridWidth, mGridHeight,
+                mMostCommonKeyWidth, mMostCommonKeyHeight, proximityCharsArray, keyCount,
+                keyXCoordinates, keyYCoordinates, keyWidths, keyHeights, keyCharCodes,
+                sweetSpotCenterXs, sweetSpotCenterYs, sweetSpotRadii);
     }
 
     public long getNativeProximityInfo() {
